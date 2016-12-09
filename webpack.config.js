@@ -102,9 +102,9 @@ if (!isProd) {
   config.devtool = 'eval-source-map';
 
   config.entry = [
+    'babel-polyfill',
     'webpack-dev-server/client?http://0.0.0.0:8080', // WebpackDevServer host and port
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
-    'babel-polyfill',
     './src',
   ];
 
